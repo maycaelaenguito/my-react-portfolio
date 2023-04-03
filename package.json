@@ -10,7 +10,7 @@
   "react-dom": "^18.2.0",
   "react-scripts": "5.0.1",
   "react-spring": "^9.7.1",
-  "web-vitals": "^2.1.4",
+  "web-vitals": "^2.1.4"
   },
   "scripts": {
   "start": "react-scripts start",
@@ -18,8 +18,7 @@
   "test": "react-scripts test",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
-  "eject": "react-scripts eject",
-
+  "eject": "react-scripts eject"
 
   },
   "eslintConfig": {
