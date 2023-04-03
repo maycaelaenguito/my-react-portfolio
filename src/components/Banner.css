@@ -1,0 +1,160 @@
+span{
+    padding-right: 10px;
+    font-size: 70px;
+    font-weight: 700px;
+}
+@media screen and (max-width: 964px) {
+    span{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 772px) {
+    span{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 570px) {
+    span{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .me{
+        display: none;
+    }
+}
+@media screen and (max-width: 454px) {
+    span{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .me{
+        display: none;
+    }
+}
+@media screen and (max-width: 280px) {
+    span{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .me{
+        display: none;
+    }
+}
+.type{
+ 
+    font-size: 40px;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+h3{
+    font-size: 35px;
+}
+.animation{
+    color: #fff;
+    /* background: linear-gradient(#0048ff, #aa00ff);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+p{
+    width: 80%;
+    padding-top: 1rem;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat';
+}
+.social-icons{
+    display: flex;
+    margin-top: 10px;
+}
+.con{
+    display: inline-block;
+}
+.icons{
+    transition: .3s;
+}
+.icons:hover{
+    color: #3bace2;
+    scale: 1.2;
+}
+.container{
+    display: flex;
+}
+.intro {
+    position: relative;
+    top: 100px;
+    transition: top 0.5s ease-out;
+  }
+  
+  .intro.top {
+    top: 0;
+  }
+@media screen and (max-width:350px) {
+    .description{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 960px) and (max-width:1920px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    #home{
+        padding-top: 15vh;
+    }
+}
