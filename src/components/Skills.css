@@ -1,0 +1,16 @@
+.tech{
+    width: 170px;
+    border-radius: 30px;
+    padding: 10px 0;
+    background: linear-gradient(45deg, #3bace2, #ff56f6);
+}
+
+@media screen and (max-width: 350px) {
+    .tech{
+        font-size: 12px;
+        padding: 5px 0;
+        width: 100px;
+        margin-top: 10px;
+    }
+}
+

@@ -1,59 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import Image from '..//assets/id.png';
-import { FaGithub, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { TypeAnimation } from 'react-type-animation';
-import { fadeIn } from '../variants';
+
+// import Image from '..//assets/id.png';
+import { BsArrowRight } from 'react-icons/bs';
 import './Banner.css';
+import {Link} from 'react-scroll';
 
 const Banner = () => {
-  const [position, setPosition] = useState('bottom');
-
-  useEffect(() => {
-    setPosition('top');
-  }, []);
 
   return (
-    <section className="min-h-[85vh] lg:min-h-[78vh] flex-items-center mt-14" id='home'>
-      <div className="container mx-auto">
-        <div>
-          <div className='mt-30'>
-            <div className={`intro ${position}`}>
-              <h3 className='my-5'>Hi! I'm Maycaela Enguito.</h3>
-            </div>
-            <div>
-              <h3>
-                <span>I am a</span>
-                <span>
-                  <TypeAnimation 
-                    sequence={[
-                      'Web Developer...',
-                      2000,
-                      'Problem Solver...',
-                      2000,
-                      'Visionary...',
-                      2000
-                    ]}
-                    speed={20}
-                    className='animation'
-                    wrapper='span'
-                    repeat={Infinity}
-                  />
-                </span>
-              </h3>
-            </div>
-            <p className='description'>
-              Hello, I'm an aspiring web developer and I love creating beautiful and responsive websites. I'm passionate about delivering the highest quality service and support to my clients, from start to finish. Let's create something amazing together!
-            </p>
-            <div className='con'>
-              <button className='btn bnt-lg p-3 p- mr-4 mt-3'>Contact Me.</button>
+    <section name='home' className="section w-full h-screen bg-black" id='home'>
+     
+      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
+            <p className='text-yellow-500'>Hi, my name is</p>
+            <h1 className='text-4xl sm:text-7xl font-bold text-[#b936ee] name'>Maycaela Enguito</h1>
+            <h2 className='text-4xl sm:text-7xl font-bold text-[#ba36eea1] name2 py-3'>An aspiring Software Engineer</h2>
+            <p className='text-[#ba36eec7] mb-4 intro'>I am passionate about pushing my limits and embracing new challenges. Currently, my focus is on mastering all aspects of Full Stack Development.</p>
 
+            <div>
+              <Link to="work"  activeClass="active" smooth={true} spy={true}> 
+              <button className='border-2 group px-6 py-3 my-2 flex items-center text-white work-btn'>View Work 
+              <span className='group-hover:rotate-90 duration-300'><BsArrowRight/></span>
+              </button>
+            </Link>
             </div>
-          </div>
-        </div>
-        <div className='mx-auto me max-w-[320px]'>
-          <img src={Image} alt=""/>
-        </div>
       </div>
+
     </section>
   );
 };

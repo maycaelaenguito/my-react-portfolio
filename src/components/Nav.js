@@ -6,7 +6,7 @@ import {Link} from 'react-scroll';
 const Nav = () => {
   return <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
     <div className="container mx-auto">
-      <div className="w-full bg-black/20 h-[80px] backdrop-blur-2xl rounded-full max-w-[480px] mx-auto px-12 flex justify-between items-center text-2xl text-white/50 icon-bg">
+      <div className="w-full bg-white/20 h-[80px] backdrop-blur-2xl rounded-full max-w-[480px] mx-auto px-12 flex justify-between items-center text-2xl text-white/50 icon-bg">
         <Link to="home" 
         activeClass="active"
         smooth={true}
@@ -22,7 +22,7 @@ const Nav = () => {
         className="cursor-pointer w-60px h-[60px] flex items-center justify-center icons">
         <BiUser/>
         </Link>
-        <Link to="services" 
+        <Link to="skills" 
         activeClass="active"
         smooth={true}
         spy={true}
